@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NusantaraBooksModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Akun">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="NamaLengkap" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Role" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Buku">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KodeBuku" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Judul" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="KategoriID" Type="int" Nullable="false" />
+    <Property Name="Pengarang" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Penerbit" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="TahunTerbit" Type="int" Nullable="false" />
+    <Property Name="Harga" Type="float" Nullable="false" />
+    <Property Name="Stok" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kategori">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NamaKategori" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Deskripsi" Type="text" />
+  </EntityType>
+  <Association Name="FK_Buku_Kategori">
+    <End Role="Kategori" Type="Self.Kategori" Multiplicity="1" />
+    <End Role="Buku" Type="Self.Buku" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kategori">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buku">
+        <PropertyRef Name="KategoriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NusantaraBooksModelStoreContainer">
+    <EntitySet Name="Akun" EntityType="Self.Akun" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Buku" EntityType="Self.Buku" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kategori" EntityType="Self.Kategori" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Buku_Kategori" Association="Self.FK_Buku_Kategori">
+      <End Role="Kategori" EntitySet="Kategori" />
+      <End Role="Buku" EntitySet="Buku" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

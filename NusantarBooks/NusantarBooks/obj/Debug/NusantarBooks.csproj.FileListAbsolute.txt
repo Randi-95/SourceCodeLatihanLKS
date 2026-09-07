@@ -1,0 +1,16 @@
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\bin\Debug\NusantarBooks.exe.config
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\bin\Debug\NusantarBooks.exe
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\bin\Debug\NusantarBooks.pdb
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\bin\Debug\EntityFramework.dll
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\bin\Debug\EntityFramework.xml
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\obj\Debug\NusantarBooks.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\obj\Debug\NusantarBooks.Properties.Resources.resources
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\obj\Debug\NusantarBooks.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\obj\Debug\NusantarBooks.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\obj\Debug\Nusantar.4B392A20.Up2Date
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\obj\Debug\NusantarBooks.exe
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\obj\Debug\NusantarBooks.pdb
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\obj\Debug\NusantarBooks.Form1.resources
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\obj\Debug\NusantarBooks.Form2.resources
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\obj\Debug\NusantarBooks.Form3.resources
+C:\Users\LENOVO\source\repos\NusantarBooks\NusantarBooks\obj\Debug\NusantarBooks.Form4.resources
